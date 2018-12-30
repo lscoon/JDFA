@@ -15,7 +15,7 @@ import soot.toolkits.scalar.FlowSet;
 import soot.Body;
 import soot.BodyTransformer;
 
-public class MyBodyTransformer extends BodyTransformer{
+public class MyBodyTransformerT extends BodyTransformer{
 
 	public static int count = 0;
 	@Override
@@ -28,8 +28,8 @@ public class MyBodyTransformer extends BodyTransformer{
 		
 		//System.out.println(dcn + "+" + arg0.getMethod().getName());
 		UnitGraph graph = new BriefUnitGraph(arg0);
-		MyTry.apk1.put(dcn.concat(mn), graph);
-		//System.out.println("1");
+		MyTry.apk2.put(dcn.concat(mn), graph);
+		//System.out.println("2");
 	}
 
 }
